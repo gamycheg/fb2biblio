@@ -14,6 +14,12 @@ class FileHandler
    */
   public static function FB2FileCleaner($file)
   {
+    // Регулярное выражение для поиска тега <FictionBook>
+    //$pattern = '/<FictionBook[^>]*>/';
+
+    // Новый тег <FictionBook>
+    //$replacement = '<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:xlink="http://www.w3.org/1999/xlink">';
+    //return preg_replace($pattern, $replacement, $file);
     return str_replace('http://www.gribuser.ru/xml/fictionbook/2.0', '', $file);
   }
 }
