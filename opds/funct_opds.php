@@ -3,7 +3,7 @@
 try {
     $dsn = 'mysql:host=localhost;dbname=books;charset=utf8mb4';
     $username = 'root';
-    $password = 'bc15cefD!';/* Укажите ваш пароль */
+    $password = '';/* Укажите ваш пароль */
 
     // Создаем экземпляр PDO
     $pdo = new PDO($dsn, $username, $password);
